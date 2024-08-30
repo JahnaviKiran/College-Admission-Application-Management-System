@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     {{>navbar}}
+    <form action="/registration" method="post">
+        <div class="container-main">  
+            <center> <h2> STUDENT ADMISSION FORM</h2> </center>  
+            <hr>  
+            <br>
+            <div class="tab">
+                <div class="container">  
+                    <h3>STUDENT DETAILS:</h3>
+                    <div class="field">
+                        <label> Name of the Student: </label>
+                        <input type="text" name="name" placeholder="Full Name" />
+                    </div>
+                    <div class="field" >
+                        <label> Date of Birth:</label>
+                        <input type="date" name="dateOfBirth">
+                    </div>
+                    <div class="field">
+                        <label> Application number </label>
+                        <input type="text" name="applicationNumber" placeholder="Application Number" size="15" />
+                    </div>
+
+                    <div class="field">
+                        <label>Blood group :</label>
+                            <select name="bloodGroup">  
+                                <option value="O+ve">O+ve</option>  
+                                <option value="AB+ve">AB+ve</option>  
+                                <option value="B+ve">B+ve</option>  
+                                <option value="A+ve">A+ve</option>   
+                                <option value="A-ve">A-ve</option> 
+                                <option value="O-ve">O-ve</option> 
+                                <option value="B-ve">B-ve</option> 
+                                <option value="AB-ve">AB-ve</option> 
+                            </select>
+                    </div>
+
+                    <div class="field">
+                        <label>Gender :</label>
+                        <br>
+                        <input type="radio" value="Male" name="gender" checked> Male
+                        <input type="radio" value="Female" name="gender"> Female
+                        <input type="radio" value="Other" name="gender"> Other
+                    </div>
+
+                    <div class="field">
+                        <label> Landline:</label>
+                        <input type="text" name="landLine" placeholder="landline" size="10" />
+                    </div>
+                    <div class="field">
+                        <label> Phone : </label>
+                        <input type="text" name="phoneNo" placeholder="phoneNo" size="10" />
+                    </div>               
+                    <div class="field">
+                        <label>Pan card number : </label>
+                        <input type="text" name="pancard" placeholder="pancard" size="10" />
+                    </div>
+                    <div class="field">
+                        <label >Adhar card number: </label>
+                        <input type="text" name="adharcard" placeholder="adharcard" size="10" />
+                    </div>
+                    <div class="field">
+                        <label > Passport number : </label>
+                        <input type="text" name="passport" placeholder="passport" size="10" />
+                    </div>
+
+                    <div class="field">
+                        <label>Nationality :</label>
+                        <select name="nationality">  
+                            <option value="INDIAN">INDIAN</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label>Domicile : </label>
+                        <select name="domicile">  
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>  
+                            <option value="Assam">Assam</option> 
+                            <option value="Bihar">Bihar</option>  
+                            <option value="Chhattisgarh">Chhattisgarh</option>  
+                            <option value="Delhi">Delhi</option>   
+                            <option value="Goa">Goa</option> 
+                            <option value="Gujarat">Gujarat</option> 
+                            <option value="Himachal Pradesh">Himachal Pradesh</option> 
+                            <option value="Jammu and Kashmir">Jammu and Kashmir</option> 
+                            <option value="Jharkhand">Jharkhand</option> 
+                            <option value="Karnataka">Karnataka</option> 
+                            <option value="Maharashtra">Maharashtra</option> 
+                            <option value=" Madhya Pradesh"> Madhya Pradesh</option>  
+                            <option value="Orissa">Orissa</option> 
+                            <option value="Telangana">Telangana</option> 
+                            <option value="Tripura">Tripura</option> 
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="West Bengal">West Bengal</option> 
+                        </select>
+                    </div>
+                    
+                    <div class="field">
+                        <label> 
+                        Mother Tongue :  
+                        </label>
+                        <select name="mothertongue">  
+                        <option value="KANNADA">KANNADA</option>  
+                        <option value="HINDI">HINDI</option> 
+                        <option value="TELUGU">TELUGU</option>  
+                        <option value="TAMIL">TAMIL</option>  
+                        <option value="URDU">URDU</option>                      
+                    </select>
+                    </div>
+                    <div class="field">
+                        <label> Caste : </label>
+                        <input type="text" name="caste" placeholder="caste" size="10" />
+                    </div>
+                        <div class="field">
+                            <label> 
+                        Differently abled:  
+                        </label>
+
+                            <select name="differentlyabled">  
+                            <option value="no">no</option> 
+                            <option value="yes">yes</option>                                         
+                        </select>
+                        </div>
+                    <div class="field">
+                        <label>Current Address :</label>
+                        <textarea  placeholder="Current Address" name="address" value="address" style="width:400px; height: 200px;">  
+                        </textarea>
+                    </div>
+
+                    <div class="field">
+                        <label>Degree: </label>
+                        <select name="degree">  
+                            <option value="BE">BE</option>
+                            <option value="PG">PG</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label> Mode of Admission : </label>
+                        <select name="admissionmode">  
+                            <option value="KCET">KCET</option>
+                            <option value="COMED-K">COMED-K</option>
+                            <option value="Management">Management</option>
+                            <option value=" SNQ"> SNQ</option>
+                            <option value="AICTE-PMSSS-JK">AICTE-PMSSS-JK</option>
+                            <option value=" MHRD"> MHRD</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label> Admission category : </label>
+                        <select name="admissioncat">  
+                            <option value="OBC"> OBC</option>
+                            <option value="GM">GM</option>
+                            <option value="2A">2A</option>
+                            <option value="2B"> 2B</option>
+                            <option value="3A"> 3A</option>
+                            <option value="3B"> 3B</option>
+                            <option value="CAT-1"> CAT-1</option>
+                            <option value="SC"> SC</option>
+                            <option value="ST"> ST</option>
+                            <option value="OP"> OP</option>
+                        </select>
+                    </div>
+
+                    <div class="table1">
+                    <table cellspacing="15px"  >
+                        <th></th>
+                        <th></th>
+                        <tr>
+                            <td style="text-align: center;">Joining Academic year:</td>
+                            <td><input type="month" name="joinyear"></td>
+                            <td style="text-align: center;">Degree year:</td>
+                            <td><input type="month" name="degyear"></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">Date of Admission:</td>
+                            <td><input type="date" name="admissiondate"></td>
+                            <td style="text-align: center;"> Admission number:</td>
+                            <td><input type="text" id="adno" name="admissionNo" placeholder="Admission number" size="10" /></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">USN : </td>
+                            <td><input type="text" id="adno" name="usn" placeholder="USN" size="10" /></td>
+                        </tr>
+                    </table>
+                    </div>
+
+                    {{!-- <div>
+                        <input type="submit" class="regbtn" onclick="" value="Register">
+                    </div> --}}
+                </div>
+            </div>
+
+            <div class="tab">
+                {{>parentDetails}}
+            {{!--<div>       
+                    <input type="submit" class="regbtn" onclick="" value="Register">
+                </div> --}}
+            </div>
+
+
+            <div class="tab">
+                <div class ="container"> 
+                    <h3>X EDUCATION DETAILS:</h3>
+
+                                        {{!-- X details --}}
+                    <div class="field">
+                        <label for="">X Institution:</label> 
+                        <input type="text"  step="any" name="X_Institution" placeholder= "X Institution" />
+                    </div>
+        
+                    <div class="field">
+                        <label>X Percentage/CGPA:</label> 
+                        <input type="number" step="any" name="XCGPAorPercentage" placeholder= "X Percentage/CGPA" />
+                    </div>
+                    <div class="field">
+                        <label for="">X Registration Number:</label> 
+                        <input type="number" step="any" name="XRegistrationNumber" placeholder= "X Registration Number" />
+                    </div>
+
+                    <div class="field">
+                        <label>X Medium of Instruction: </label>
+                        <select name="XMedium">  
+                            <option value="ENGLISH">ENGLISH</option>  
+                            <option value="KANNADA">KANNADA</option>  
+                            <option value="HINDI">HINDI</option>            
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label> X Board : </label>
+                        <select name="Xboard">  
+                            <option value="Central Board of Secondary Education (CBSE)"> Central Board of Secondary Education (CBSE)</option>
+                            <option value="Karnataka Secondary Education Examination Board">Karnataka Secondary Education Examination Board</option>
+                            <option value="Council for the Indian School Certificate Examinations">Council for the Indian School Certificate Examinations </option>
+                            <option value="ICSE">ICSE</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label> X Month and Year of Passing:</label>
+                        <input type="month" name="Xpassingyear">
+                    </div>
+                    <div class="field">
+                        <label>X Address:</label> 
+                        <input type="text" name="XAddress" placeholder= "X Address" />   
+                    </div>
+                    {{!-- <div>       
+                        <input type="submit" class="regbtn" onclick="" value="Register">
+                    </div> --}}
+                </div>
+            </div>
+
+            <div class="tab">
+                <div class="container">
+                                            {{!-- XI education --}}
+                    <h3>XI EDUCATION DETAILS:</h3>                                                                      
+                    <div class="field">
+                        <label>XI Institution:</label> 
+                        <input type="text" name="XI_Institution" placeholder= "XI Institution" />
+                    </div>
+                    <div class="field">
+                        <label>XI Percentage/CGPA:</label>
+                            <input type="number" step="any" name="XICGPAorPercentage" placeholder= "XI Percentage/CGPA" />
+                    </div>
+                    <div class="field">
+                        <label> XI Registration Number:</label>
+                        <input type="text"  name="XIRegistrationNumber" placeholder= "XI Registration Number" />
+                    </div>		
+                    <div class="field">
+                        <label> XI Board : </label>
+                        <select name="XIboard">  
+                            <option value="Central Board of Secondary Education (CBSE)"> Central Board of Secondary Education (CBSE)</option>
+                            <option value="Karnataka Board of the Pre-University Education">Karnataka Board of the Pre-University Education</option>
+                            <option value="Andhra Pradesh Board of Intermediate Education ">Andhra Pradesh Board of Intermediate Education </option> 
+                            <option value="Bihar School Examination Board">Bihar School Examination Board</option> 
+                            <option value="Council for the Indian School Certificate Examinations">Council for the Indian School Certificate Examinations </option> 
+                            <option value="J&K State Board of School Education">JK State Board of School Education</option> 
+                            <option value="Rajasthan Board of Secondary Education">Rajasthan Board of Secondary Education</option>
+                            <option value="Assam Higher Secondary Education Council, Bamunimaidan">Assam Higher Secondary Education Council, Bamunimaidan</option>
+                            <option value="Maharashtra State Board of Secondary and Higher Secondary Education">Maharashtra State Board of Secondary and Higher Secondary Education</option>
+                        </select>
+                    </div>		
+                    <div class="field">
+                        <label> XI Month and Year of Passing:</label>
+                        <input type="month" name="XIpassingyear">
+                    </div>
+                    <div class="field">
+                        <label> XI Course </label>
+                        <input type="text" name="XIcourse">
+                    </div>
+                    <div class="field">
+                        <label>XI Medium of Instruction	: </label>
+                        <select name="XIMedium">  
+                        <option value="ENGLISH">ENGLISH</option>  
+                        <option value="KANNADA">KANNADA</option>  
+                        <option value="HINDI">HINDI</option>            
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label>XI Specialization : </label>
+                        <select name="XISpecialization">  
+                            <option value="STATISTICS">STATISTICS</option>  
+                            <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>  
+                            <option value="BIOLOGY">BIOLOGY</option> 
+                            <option value="ELECTRONICS">ELECTRONICS</option>            
+                        </select>
+                    </div>
+
+                    <div class="table2" >
+                        <table cellspacing="15px" >
+                                <th>Subjects</th>
+                                <th>Obtained Marks</th>
+                                <th>Maximum Marks</th>
+                                <th>Obtained CGPA</th>
+                                <th>Highest CGPA</th>
+                                
+
+                                <tr>
+                                    <td align="center">PHYSICS</td>
+                                    <td><input type="text" step="any" name="XIPhyObMarks" placeholder="Obtained" size="4"></td>
+                                    <td><input type="text" step="any" name="XIPhyMaxMarks" placeholder="Maximum " size="4"></td>
+                                    <td><input type="text" step="any" name="XIPhyObCgpa" placeholder="Obtained" size="4"></td>
+                                    <td><input type="text" step="any" name="XIPhyMaxCgpa" placeholder="Highest " size="4"></td>
+                                </tr>
+                                <tr>
+                                    <td align="center">CHEMISTRY</td>
+                                    <td><input type="number" step="any" name="XIChemObMarks" placeholder="Obtained"></td>
+                                    <td><input type="number" step="any" name="XIChemMaxMarks" placeholder="Maximum"></td>
+                                    <td><input type="number" step="any" name="XIChemObCgpa" placeholder="Obtained" size="4"></td>
+                                    <td><input type="number" step="any" name="XIChemMaxCgpa" placeholder="Highest" size="4"></td>
+                                </tr>
+                                <tr>
+                                    <td align="center">MATHS</td>
+                                    <td><input type="number" step="any" name="XIMathObMarks" placeholder="Obtained"></td>
+                                    <td><input type="number" step="any" name="XIMathMaxMarks" placeholder="Maximum"></td>
+                                    <td><input type="number" step="any" name="XIMathObCgpa" placeholder="Maximum"></td>
+                                    <td><input type="number" step="any" name="XIMathMaxCgpa" placeholder="Maximum"></td>
+
+                                </tr>
+                                <tr>
+                                    <td align="center"><select name="XISpecializationMarks">  
+                                            <option value="STATISTICS">STATISTICS</option>  
+                                            <option value="COMPUTER SCIENCE">COMPUTERS</option>  
+                                            <option value="BIOLOGY">BIOLOGY</option> 
+                                            <option value="ELECTRONICS">ELECTRONICS</option>            
+                                            </select>
+                                    </td>
+                                    <td><input type="number" step="any" name="XIOpObMarks" placeholder="Obtained"></td>
+                                    <td><input type="number" step="any" name="XIOpMaxMarks" placeholder="Maximum"></td>
+                                    <td><input type="number" step="any" name="XIOpObCgpa" placeholder="Maximum "></td>
+                                    <td><input type="number" step="any" name="XIOpMaxCgpa" placeholder="Maximum "></td>
+
+                                </tr>
+                        </table>																																						
+                    </div>	
+                    {{!-- <div>
+                        <input type="submit" class="regbtn" onclick="" value="Register">
+                    </div> --}}
+                 </div>
+            </div>
+
+            <div class="tab">
+                <div class="container">
+                                {{!-- XII details --}}
+                    <h3>XII EDUCATION DETAILS:</h3>
+           
+
+                    <div class="field">
+                        <label>XII Institution: </label>
+                        <input type="text" step="any" name="XII_Institution" placeholder= "XII Institution" />
+                    </div>
+
+                    <div class="field">
+                        <label > XII Percentage/CGPA:</label>            
+                        <input type="number" step="any" name="XIICGPA/Percentage" placeholder= "XII Percentage/CGPA" /> 
+                    </div>
+                    <div class="field">
+                        <label>XII Registration Number:</label> 
+                        <input type="number" step="any" name="XIIRegistrationNumber" placeholder= "XII Registration Number" />
+                    </div>
+
+                    <div class="field">
+                        <label> XII Board : </label>
+                        <select name="XIIboard">  
+                            <option value="Central Board of Secondary Education (CBSE)"> Central Board of Secondary Education (CBSE)</option>
+                            <option value="Karnataka Board of the Pre-University Education">Karnataka Board of the Pre-University Education</option>
+                            <option value="Andhra Pradesh Board of Intermediate Education ">Andhra Pradesh Board of Intermediate Education </option> 
+                            <option value="Bihar School Examination Board">Bihar School Examination Board</option> 
+                            <option value="Council for the Indian School Certificate Examinations">Council for the Indian School Certificate Examinations </option> 
+                            <option value="J&K State Board of School Education">JK State Board of School Education</option> 
+                            <option value="Rajasthan Board of Secondary Education">Rajasthan Board of Secondary Education</option>
+                            <option value="Assam Higher Secondary Education Council, Bamunimaidan">Assam Higher Secondary Education Council, Bamunimaidan</option>
+                            <option value="Maharashtra State Board of Secondary and Higher Secondary Education">Maharashtra State Board of Secondary and Higher Secondary Education</option>
+                        </select>
+                    </div>
+        
+                
+                    <div class="field">
+                        <label> XII Month and Year of Passing:</label>
+                        <input type="month" name="XIIpassingyear">
+                    </div>
+                    <div class="field">
+                        <label> XII Course:</label>
+                        <input type="text" name="XIIcourse">
+                    </div>
+                    <div class="field">
+                        <label>XII Medium of Instruction	: </label>
+                        <select name="XIIMedium">  
+                        <option value="ENGLISH">ENGLISH</option>  
+                        <option value="KANNADA">KANNADA</option>  
+                        <option value="HINDI">HINDI</option>            
+                        </select>
+                    </div>
+                
+                    <div class="field">
+                        <label>XII Entrance Exam : </label>
+                        <select name="XIISpecialization">  
+                        <option value="CET">CET</option>  
+                        <option value="COMED - K">COMED - K</option>  
+                        <option value="PMSSS">PMSSS</option>            
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label> XII Studied State: </label>
+                            <input type="text"  name="XIIStudiedState" placeholder= "XII Studied State" />
+                    </div>
+
+                    <div class="table1">
+                        <table>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <tr>
+                                <td>  XII Entrance No:</td>
+                                <td> <input type="number" step="any" name=" XIIEntranceNo" placeholder= " XII Entrance No" /></td>
+                                <td> XII Entrance Rank:</td>
+                                <td><input type="number" step="any" name=" XIIEntranceRank" placeholder= "XII Entrance Rank" /></td>
+                            </tr>
+                        </table>
+                    </div>
+    Marks
+
+                    <div class="table1">
+                        <table>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <tr>
+                                <td> XII PCM Total Marks:</td>
+                                <td><input type="number" name="XII_PCM_Total" placeholder= "XII PCM Total" /></td>
+                                <td>XII PCM Obtained Marks:</td>
+                                <td><input type="number" name="XII_PCM_Obtained" placeholder= "XII PCM Obtained" /></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br>
+																																									
+                    <div class="table2" >
+                        <table cellspacing="15px" >
+                            <th>Subjects</th>
+                            <th>Obtained Marks</th>
+                            <th>Maximum Marks</th>
+                            <th>Obtained CGPA</th>
+                            <th>Highest CGPA</th>
+                            <tr>
+                                <td align="center">PHYSICS</td>
+                                <td><input type="number" step="any" name="XIIPhyObMarks" placeholder="Obtained" size="4"></td>
+                                <td><input type="number" step="any" name="XIIPhyMaxMarks" placeholder="Maximum " size="4"></td>
+                                <td><input type="number" step="any" name="XIIPhyObCgpa" placeholder="Obtained" size="4"></td>
+                                <td><input type="number" step="any" name="XIIPhyMaxCgpa" placeholder="Highest " size="4"></td>
+                            </tr>
+                            <tr>
+                                <td align="center">CHEMISTRY</td>
+                                <td><input type="number" step="any" name="XIIChemObMarks" placeholder="Obtained"></td>
+                                <td><input type="number" step="any" name="XIIChemMaxMarks" placeholder="Maximum"></td>
+                                <td><input type="number" step="any" name="XIIChemObCgpa" placeholder="Obtained" size="4"></td>
+                                <td><input type="number" step="any" name="XIIChemMaxCgpa" placeholder="Highest" size="4"></td>
+                            </tr>
+                            <tr>
+                                <td align="center">MATHS</td>
+                                <td><input type="number" step="any" name="XIIMathObMarks" placeholder="Obtained"></td>
+                                <td><input type="number" step="any" name="XIIMathMaxMarks" placeholder="Maximum"></td>
+                                <td><input type="number" step="any" name="XIIMathObCgpa" placeholder="Maximum"></td>
+                                <td><input type="number" step="any" name="XIIMathMaxCgpa" placeholder="Maximum"></td>
+
+                            </tr>
+                            <tr>
+                                <td align="center"><select name="XIISpecializationMarks">  
+                                        <option value="STATISTICS">STATISTICS</option>  
+                                        <option value="COMPUTER SCIENCE">COMPUTERS</option>  
+                                        <option value="BIOLOGY">BIOLOGY</option> 
+                                        <option value="ELECTRONICS">ELECTRONICS</option>            
+                                        </select>
+                                </td>
+                                <td><input type="number" step="any" name="XIIOpObMarks" placeholder="Obtained"></td>
+                                <td><input type="number" step="any" name="XIIOpMaxMarks" placeholder="Maximum"></td>
+                                <td><input type="number" step="any" name="XIIOpObCgpa" placeholder="Maximum "></td>
+                                <td><input type="number" step="any" name="XIIOpMaxCgpa" placeholder="Maximum "></td>
+
+                                </tr>
+                        </table>																																						
+		            </div>	  
+                     <div>
+                        <input type="submit" class="regbtn" onclick="" value="Register">
+                    </div>  
+                                    
+                </div>
+                
+            </div>
+
+            <div style="overflow:auto;">
+                <div style="float:right;">
+                    {{!-- <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button> --}}
+                    <button type="button" id="prevBtn" onclick="nextPrev(-1); topFunction();">Previous</button>
+
+                    <button type="button" id="nextBtn" onclick="nextPrev(1); topFunction();">Next</button>
+                </div>
+            </div>
+
+        </div>
+    </form> 
+
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align:center;margin-top:40px;">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+      
+
+
+        </div>
+         
+</div>
+    <script src="/script.js"></script>
+   
+ <div class="footer-line">
+    <hr>
+
+ </div>
+
+     {{>footer}}
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+   <form action="/registration" method="post">
+
+       <div class="container">
+
+    <h3>XI EDUCATION DETAILS:</h3>                                                                      
+
+	<div class="field">
+       <label>XI Institution:</label> 
+            <input type="text" name="XI_Institution" placeholder= "XI Institution" />
+    </div>
+    <div class="field">
+        <label>XI Percentage/CGPA:</label>
+            <input type="number" step="any" name="XICGPAorPercentage" placeholder= "XI Percentage/CGPA" />
+    </div>
+     <div class="field">
+       
+         <label> XI Registration Number:</label>
+            <input type="text"  name="XIRegistrationNumber" placeholder= "XI Registration Number" />
+    </div>		
+     <div class="field">
+        <label> XI Board : </label>
+        <select name="XIboard">  
+            <option value="Central Board of Secondary Education (CBSE)"> Central Board of Secondary Education (CBSE)</option>
+            <option value="Karnataka Board of the Pre-University Education">Karnataka Board of the Pre-University Education</option>
+            <option value="Andhra Pradesh Board of Intermediate Education ">Andhra Pradesh Board of Intermediate Education </option> 
+            <option value="Bihar School Examination Board">Bihar School Examination Board</option> 
+            <option value="Council for the Indian School Certificate Examinations">Council for the Indian School Certificate Examinations </option> 
+            <option value="J&K State Board of School Education">JK State Board of School Education</option> 
+            <option value="Rajasthan Board of Secondary Education">Rajasthan Board of Secondary Education</option>
+            <option value="Assam Higher Secondary Education Council, Bamunimaidan">Assam Higher Secondary Education Council, Bamunimaidan</option>
+            <option value="Maharashtra State Board of Secondary and Higher Secondary Education">Maharashtra State Board of Secondary and Higher Secondary Education</option>
+        </select>
+    </div>		
+    <div class="field">
+        <label> XI Month and Year of Passing:</label>
+        <input type="month" name="XIpassingyear">
+    </div>
+    <div class="field">
+        <label> XI Course </label>
+        <input type="text" name="XIcourse">
+    </div>
+    <div class="field">
+        <label>XI Medium of Instruction	: </label>
+        <select name="XIMedium">  
+        <option value="ENGLISH">ENGLISH</option>  
+        <option value="KANNADA">KANNADA</option>  
+        <option value="HINDI">HINDI</option>            
+        </select>
+    </div>
+
+    <div class="field">
+        <label>XI Specialization : </label>
+        <select name="XISpecialization">  
+        <option value="STATISTICS">STATISTICS</option>  
+        <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>  
+        <option value="BIOLOGY">BIOLOGY</option> 
+        <option value="ELECTRONICS">ELECTRONICS</option>            
+        </select>
+    </div>
+
+<div class="table2" >
+                <table cellspacing="15px" >
+                    <th>Subjects</th>
+                    <th>Obtained Marks</th>
+                    <th>Maximum Marks</th>
+                    <th>Obtained CGPA</th>
+                    <th>Highest CGPA</th>
+                    
+
+                    <tr>
+                        <td align="center">PHYSICS</td>
+                        <td><input type="number" step="any" name="XIPhyObMarks" placeholder="Obtained" size="4"></td>
+                        <td><input type="number" step="any" name="XIPhyMaxMarks" placeholder="Maximum " size="4"></td>
+                        <td><input type="number" step="any" name="XIPhyObCgpa" placeholder="Obtained" size="4"></td>
+                        <td><input type="number" step="any" name="XIPhyMaxCgpa" placeholder="Highest " size="4"></td>
+                    </tr>
+                    <tr>
+                        <td align="center">CHEMISTRY</td>
+                        <td><input type="number" step="any" name="XIChemObMarks" placeholder="Obtained"></td>
+                        <td><input type="number" step="any" name="XIChemMaxMarks" placeholder="Maximum"></td>
+                        <td><input type="number" step="any" name="XIChemObCgpa" placeholder="Obtained" size="4"></td>
+                        <td><input type="number" step="any" name="XIChemMaxCgpa" placeholder="Highest" size="4"></td>
+                    </tr>
+                    <tr>
+                        <td align="center">MATHS</td>
+                        <td><input type="number" step="any" name="XIMathObMarks" placeholder="Obtained"></td>
+                        <td><input type="number" step="any" name="XIMathMaxMarks" placeholder="Maximum"></td>
+                        <td><input type="number" step="any" name="XIMathObCgpa" placeholder="Maximum"></td>
+                        <td><input type="number" step="any" name="XIMathMaxCgpa" placeholder="Maximum"></td>
+
+                    </tr>
+                    <tr>
+                        <td align="center"><select name="XISpecializationMarks">  
+                                <option value="STATISTICS">STATISTICS</option>  
+                                <option value="COMPUTER SCIENCE">COMPUTERS</option>  
+                                <option value="BIOLOGY">BIOLOGY</option> 
+                                <option value="ELECTRONICS">ELECTRONICS</option>            
+                                </select>
+                        </td>
+                        <td><input type="number" step="any" name="XIOpObMarks" placeholder="Obtained"></td>
+                        <td><input type="number" step="any" name="XIOpMaxMarks" placeholder="Maximum"></td>
+                        <td><input type="number" step="any" name="XIOpObCgpa" placeholder="Maximum "></td>
+                        <td><input type="number" step="any" name="XIOpMaxCgpa" placeholder="Maximum "></td>
+
+                    </tr>
+                    </table>																																						
+		</div>	
+
+
+</div>
+<div>
+         <input type="submit" class="regbtn" onclick="" value="Register">
+        </div>
+    </form>
+</body>
+</html>

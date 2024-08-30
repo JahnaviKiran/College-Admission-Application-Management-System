@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   
+    <form action="" method="post">
+    <h3>X EDUCATION DETAILS:</h3>
+ <div class ="container"> 
+    
+ {{!-- X details --}}
+    <div class="field">
+        <label for="">X Institution:</label> 
+            <input type="text"  step="any" name="XInstitution" placeholder= "X Institution" />
+            
+        
+    </div>
+     
+    <div class="field">
+        <label>X Percentage/CGPA:</label> 
+            <input type="number" step="any" name="XCGPAorPercentage" placeholder= "X Percentage/CGPA" />
+    </div>
+     <div class="field">
+        <label for="">X Registration Number:</label> 
+            <input type="number" step="any" name="XRegistrationNumber" placeholder= "X Registration Number" />
+    </div>
+
+    <div class="field">
+        <label>X Medium of Instruction: </label>
+        <select name="XMedium">  
+        <option value="ENGLISH">ENGLISH</option>  
+        <option value="KANNADA">KANNADA</option>  
+        <option value="HINDI">HINDI</option>            
+        </select>
+    </div>
+
+    <div class="field">
+        <label> X Board : </label>
+        <select name="Xboard">  
+            <option value="Central Board of Secondary Education (CBSE)"> Central Board of Secondary Education (CBSE)</option>
+            <option value="Karnataka Secondary Education Examination Board">Karnataka Secondary Education Examination Board</option>
+            <option value="Council for the Indian School Certificate Examinations">Council for the Indian School Certificate Examinations </option>
+            <option value="ICSE">ICSE</option>
+        </select>
+    </div>
+    <div class="field">
+        <label> X Month and Year of Passing:</label>
+        <input type="month" name="Xpassingyear">
+    </div>
+    <div class="field">
+       <label>X Address:</label> 
+        <input type="text" name="XAddress" placeholder= "X Address" />   
+    </div>
+
+    
+
+    
+</div>
+
+{{!-- <div>
+         <input type="submit" class="regbtn" onclick="" value="Register">
+        </div> --}}
+</form>
+</body>
+</html>
